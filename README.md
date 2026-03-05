@@ -2,7 +2,7 @@
 
 A modern, dark-themed personal portfolio website built with **React** and **Vite**, showcasing my projects, skills, and academic journey.
 
-🔗 **Live:** [Coming soon on Vercel]
+🔗 **Live:** [ashishportfolio-kappa.vercel.app](https://ashishportfolio-kappa.vercel.app)
 
 ---
 
