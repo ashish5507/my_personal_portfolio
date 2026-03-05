@@ -1,83 +1,61 @@
-# 🚀 Ashish Joshi — Portfolio
+# Ashish Joshi — Portfolio
 
-A modern, dark-themed personal portfolio website built with **React** and **Vite**, showcasing my projects, skills, and academic journey.
+My personal portfolio site, built with React and Vite.
 
-🔗 **Live:** [ashishportfolio-kappa.vercel.app](https://ashishportfolio-kappa.vercel.app)
-
----
-
-## 👤 About Me
-
-Hi, I'm **Ashish Joshi** — a 2nd year **B.Tech (AI Specialization)** student at **Netaji Subhas University of Technology (NSUT)**, New Delhi. I'm passionate about **AI/ML**, **Full-Stack Development**, and **Problem Solving**.
-
-- 🎓 CGPA: **8.60/10**
-- 🧠 20+ Projects Built
-- 💻 250+ DSA Problems Solved
-- 📜 CS50 Certified (Harvard)
+**Live:** [ashishportfolio-kappa.vercel.app](https://ashishportfolio-kappa.vercel.app)
 
 ---
 
-## 🛠️ Tech Stack
+## About
 
-| Category | Technologies |
+I'm a 2nd year B.Tech student (AI Specialization) at Netaji Subhas University of Technology, New Delhi. I work mostly with AI/ML and full-stack development — building things that actually solve problems.
+
+Some numbers: 8.61 CGPA, 20+ projects, 250+ DSA problems solved, and a CS50 SQL certificate from Harvard.
+
+---
+
+## Tech Stack
+
+| Area | Tools |
 |---|---|
-| **Languages** | Python, C++, JavaScript, SQL, C |
-| **Frontend** | React, Next.js, HTML/CSS, Tailwind CSS |
-| **Backend & DB** | FastAPI, Node.js, SQLite, PostgreSQL, Firebase |
-| **AI/ML** | PyTorch, TensorFlow, Scikit-learn, FAISS, HuggingFace |
-| **Tools & DevOps** | Git, GitHub, Docker, Linux, Vercel, Railway |
+| Languages | Python, C++, JavaScript, SQL, C |
+| Frontend | React, Next.js, HTML/CSS, Tailwind CSS |
+| Backend & DB | FastAPI, Node.js, SQLite, PostgreSQL, Firebase |
+| AI/ML | PyTorch, TensorFlow, Scikit-learn, FAISS, HuggingFace |
+| DevOps | Git, Docker, Linux, Vercel, Railway |
 
 ---
 
-## 🔥 Featured Projects
+## Projects
 
-### 🏜️ DesertSeg — Terrain Segmentation
-Semantic segmentation pipeline classifying desert terrain into 10 categories using PyTorch & SegFormer-B2. Trained on synthetic data from Duality AI's Falcon platform.
-> **mIoU: 56.92%** · **Pixel Accuracy: 85.35%**
+**DesertSeg** — Semantic segmentation for off-road terrain using PyTorch and SegFormer-B2. Trained on synthetic simulation data. 56.92% mIoU, 85.35% pixel accuracy.
 
-### 🔍 ForensicAI — Digital Forensic Agent
-AI-powered UFDR investigation tool using RAG architecture with FAISS vector search. Built with FastAPI + Next.js.
-> [▶️ Watch Demo](https://youtu.be/jLuMoxl2rkA?si=lGkRxnBIAZ4lW11V)
+**ForensicAI** — AI agent for investigating forensic data reports using RAG + FAISS. Full-stack app with FastAPI and Next.js. ([Demo](https://youtu.be/jLuMoxl2rkA?si=lGkRxnBIAZ4lW11V))
 
-### 🌊 DeepSea eDNA — Biodiversity Analysis
-AI-driven marine species discovery pipeline using CNN classification + HDBSCAN clustering for novel taxa detection.
-> [▶️ Watch Demo](https://youtu.be/JJIbn9EPQAE?si=D1orC-gQpIOUgsCO)
+**DeepSea eDNA** — Marine species discovery pipeline using CNN classification and HDBSCAN clustering on environmental DNA. ([Demo](https://youtu.be/JJIbn9EPQAE?si=D1orC-gQpIOUgsCO))
 
 ---
 
-## 🏗️ Built With
-
-- **React 18** — Component-based UI
-- **Vite** — Lightning-fast build tool
-- **React Router** — Client-side routing
-- **Lucide React** — Beautiful icons
-- **Vanilla CSS** — Custom design system with warm amber/gold theme
-
----
-
-## 🚀 Run Locally
+## Running Locally
 
 ```bash
-# Clone the repo
-git clone https://github.com/ashish5507/portfolio-website.git
-cd portfolio-website
-
-# Install dependencies
+git clone https://github.com/ashish5507/my_personal_portfolio.git
+cd my_personal_portfolio
 npm install
-
-# Start dev server
 npm run dev
 ```
 
 ---
 
-## 📬 Contact
+## Built With
 
-- 📧 [ashishjoshirj57@gmail.com](mailto:ashishjoshirj57@gmail.com)
-- 💼 [LinkedIn](https://www.linkedin.com/in/ashishjoshi540)
-- 🐙 [GitHub](https://github.com/ashish5507)
-- 📸 [Instagram](https://www.instagram.com/miselfashish)
+React 18, Vite, React Router, Lucide icons, and custom CSS with a warm amber/gold theme.
 
 ---
 
-<p align="center">Built with ♡ and React by Ashish Joshi © 2026</p>
+## Contact
+
+- [ashishjoshirj57@gmail.com](mailto:ashishjoshirj57@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/ashishjoshi540)
+- [GitHub](https://github.com/ashish5507)
+- [Instagram](https://www.instagram.com/miselfashish)
