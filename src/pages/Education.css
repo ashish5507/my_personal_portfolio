@@ -1,0 +1,271 @@
+/* Education Page */
+.education-card {
+    padding: var(--space-2xl);
+    position: relative;
+}
+
+
+
+.edu-main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.edu-header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-xl);
+}
+
+.edu-logo-container {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-lg);
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    flex-shrink: 0;
+    border: 1px solid var(--border-subtle);
+}
+
+.edu-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.edu-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    background: var(--accent-dim);
+    color: var(--accent);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    margin-bottom: var(--space-sm);
+}
+
+.edu-university {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+}
+
+.edu-degree {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--font-size-base);
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.edu-detail {
+    font-size: var(--font-size-sm);
+    color: var(--text-tertiary);
+}
+
+/* GPA */
+.edu-gpa-section {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xl);
+    padding: var(--space-lg);
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+}
+
+.gpa-display {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.gpa-number {
+    font-size: var(--font-size-4xl);
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+}
+
+.gpa-label {
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.gpa-bar-track {
+    flex: 1;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.gpa-bar-fill {
+    height: 100%;
+    background: var(--gradient-accent);
+    border-radius: var(--radius-full);
+    transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+}
+
+.gpa-bar-fill::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(212, 165, 116, 0.5);
+}
+
+/* Coursework */
+.coursework-section {
+    margin-top: var(--space-2xl);
+}
+
+.sub-section-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: var(--space-xl);
+    color: var(--text-primary);
+}
+
+.sub-section-title svg {
+    color: var(--accent);
+}
+
+.coursework-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+}
+
+.coursework-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    transition: all var(--transition-base);
+}
+
+.coursework-item:hover {
+    color: var(--text-primary);
+    border-color: var(--border-medium);
+    background: var(--bg-card-hover);
+}
+
+.coursework-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+}
+
+/* Certifications */
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.cert-card {
+    padding: var(--space-xl);
+    display: flex;
+    gap: var(--space-lg);
+    align-items: flex-start;
+}
+
+.cert-icon-wrap {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: color-mix(in srgb, var(--cert-color) 15%, transparent);
+    color: var(--cert-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.cert-date {
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-xs);
+}
+
+.cert-title {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.cert-issuer {
+    font-size: var(--font-size-sm);
+    color: var(--accent);
+    margin-bottom: var(--space-sm);
+}
+
+.cert-description {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+}
+
+.cert-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: var(--font-size-xs);
+    color: var(--accent);
+    font-weight: 500;
+    transition: all var(--transition-fast);
+}
+
+.cert-link:hover {
+    gap: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .edu-header {
+        flex-direction: column;
+    }
+
+    .edu-gpa-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .coursework-grid,
+    .certs-grid {
+        grid-template-columns: 1fr;
+    }
+}

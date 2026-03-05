@@ -1,0 +1,303 @@
+/* Background Elements */
+.bg-elements {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* Floating text items */
+.bg-float-item {
+    position: absolute;
+    font-family: 'Courier New', monospace;
+    white-space: nowrap;
+    opacity: 0;
+    animation: bgFloat linear infinite;
+    will-change: transform;
+    user-select: none;
+}
+
+.bg-equation {
+    font-size: 15px;
+    color: rgba(212, 165, 116, 0.18);
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+.bg-code {
+    font-size: 14px;
+    color: rgba(92, 181, 137, 0.15);
+    font-weight: 500;
+}
+
+.bg-symbol {
+    font-size: 28px;
+    color: rgba(155, 142, 196, 0.12);
+    font-weight: 700;
+}
+
+.bg-binary {
+    font-size: 20px;
+    color: rgba(212, 165, 116, 0.1);
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+@keyframes bgFloat {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.97);
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    92% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-60px) scale(1.01);
+    }
+}
+
+/* Geometric shapes */
+.bg-geo {
+    position: absolute;
+    border-radius: 50%;
+    animation: bgPulse 8s ease-in-out infinite;
+}
+
+.bg-geo-1 {
+    width: 500px;
+    height: 500px;
+    top: -5%;
+    right: -100px;
+    background: radial-gradient(circle, rgba(212, 165, 116, 0.08) 0%, transparent 65%);
+    animation-duration: 10s;
+}
+
+.bg-geo-2 {
+    width: 400px;
+    height: 400px;
+    top: 30%;
+    left: -80px;
+    background: radial-gradient(circle, rgba(155, 142, 196, 0.07) 0%, transparent 65%);
+    animation-duration: 12s;
+    animation-delay: -3s;
+}
+
+.bg-geo-3 {
+    width: 600px;
+    height: 600px;
+    bottom: -10%;
+    right: 5%;
+    background: radial-gradient(circle, rgba(92, 181, 137, 0.06) 0%, transparent 65%);
+    animation-duration: 15s;
+    animation-delay: -5s;
+}
+
+.bg-geo-4 {
+    width: 220px;
+    height: 220px;
+    top: 55%;
+    left: 12%;
+    border: 1.5px solid rgba(212, 165, 116, 0.08);
+    border-radius: var(--radius-xl);
+    background: none;
+    transform: rotate(45deg);
+    animation: bgSpin 30s linear infinite;
+}
+
+.bg-geo-5 {
+    width: 140px;
+    height: 140px;
+    top: 18%;
+    left: 55%;
+    border: 1.5px solid rgba(155, 142, 196, 0.07);
+    border-radius: 0;
+    background: none;
+    animation: bgSpin 25s linear infinite reverse;
+}
+
+/* Extra geometric rings */
+.bg-geo-ring-1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    left: 20%;
+    border: 1px solid rgba(212, 165, 116, 0.05);
+    border-radius: 50%;
+    animation: bgSpin 40s linear infinite;
+}
+
+.bg-geo-ring-2 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 65%;
+    right: 15%;
+    border: 1px dashed rgba(92, 181, 137, 0.06);
+    border-radius: 50%;
+    animation: bgSpin 35s linear infinite reverse;
+}
+
+.bg-geo-ring-3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 40%;
+    right: 25%;
+    border: 2px solid rgba(155, 142, 196, 0.06);
+    border-radius: 50%;
+    animation: bgPulse 6s ease-in-out infinite;
+}
+
+@keyframes bgPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: scale(1.12);
+        opacity: 1;
+    }
+}
+
+@keyframes bgSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Dot grids */
+.bg-dots {
+    position: absolute;
+    opacity: 0.7;
+}
+
+.bg-dots-1 {
+    top: 12%;
+    right: 6%;
+    color: rgba(212, 165, 116, 0.12);
+    transform: rotate(15deg);
+}
+
+.bg-dots-2 {
+    bottom: 20%;
+    left: 4%;
+    color: rgba(155, 142, 196, 0.1);
+    transform: rotate(-10deg);
+}
+
+/* Circuit patterns */
+.bg-circuit {
+    position: absolute;
+}
+
+.bg-circuit-1 {
+    top: 42%;
+    right: 2%;
+    color: rgba(212, 165, 116, 0.1);
+    transform: rotate(-5deg);
+}
+
+.bg-circuit-2 {
+    bottom: 12%;
+    left: 6%;
+    color: rgba(92, 181, 137, 0.08);
+    transform: rotate(10deg);
+}
+
+/* Cross / plus markers */
+.bg-cross {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 200;
+    animation: bgPulse 5s ease-in-out infinite;
+}
+
+.bg-cross-1 {
+    top: 25%;
+    right: 20%;
+    color: rgba(212, 165, 116, 0.12);
+    animation-delay: -1s;
+}
+
+.bg-cross-2 {
+    bottom: 30%;
+    left: 25%;
+    color: rgba(92, 181, 137, 0.1);
+    animation-delay: -3s;
+}
+
+.bg-cross-3 {
+    top: 70%;
+    left: 50%;
+    color: rgba(155, 142, 196, 0.1);
+    animation-delay: -2s;
+}
+
+/* Connecting lines */
+.bg-line {
+    position: absolute;
+    height: 1px;
+    transform-origin: left center;
+}
+
+.bg-line-1 {
+    width: 250px;
+    top: 30%;
+    left: 0;
+    background: linear-gradient(90deg, transparent, rgba(212, 165, 116, 0.08), transparent);
+    transform: rotate(25deg);
+}
+
+.bg-line-2 {
+    width: 300px;
+    bottom: 25%;
+    right: 0;
+    background: linear-gradient(90deg, transparent, rgba(155, 142, 196, 0.06), transparent);
+    transform: rotate(-15deg);
+}
+
+.bg-line-3 {
+    width: 200px;
+    top: 60%;
+    left: 10%;
+    background: linear-gradient(90deg, transparent, rgba(92, 181, 137, 0.07), transparent);
+    transform: rotate(35deg);
+}
+
+/* Hide on small screens to reduce clutter */
+@media (max-width: 768px) {
+    .bg-float-item {
+        font-size: 10px !important;
+    }
+
+    .bg-geo-4,
+    .bg-geo-5,
+    .bg-geo-ring-1,
+    .bg-geo-ring-2,
+    .bg-geo-ring-3,
+    .bg-circuit,
+    .bg-dots,
+    .bg-cross,
+    .bg-line {
+        display: none;
+    }
+}
