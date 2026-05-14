@@ -5,24 +5,26 @@ import './Projects.css'
 const projects = [
     {
         id: 1,
-        title: 'DesertSeg — Terrain Segmentation',
-        tagline: 'Semantic segmentation for off-road autonomy',
-        description: 'A semantic segmentation pipeline that classifies every pixel in desert off-road scenes into 10 terrain categories — Trees, Sky, Rocks, Landscape, Flowers, Logs, and more. Trained entirely on synthetic simulation data from Duality AI\'s Falcon platform, proving synthetic environments can train production-quality perception models for autonomous ground vehicles.',
+        title: 'LectureIQ — Lecture Intelligence Platform',
+        tagline: 'Multi-modal AI study platform for students',
+        description: 'A powerful lecture intelligence platform that takes lecture media (audio, video, or YouTube URLs) and automatically transcribes, analyzes, and transforms it into structured study material like organized notes, practice questions, and pop quizzes.',
         highlights: [
-            'Custom 16-bit mask loader handling Duality Falcon\'s I;16 PNG format',
-            'Dataset pipeline optimised for Colab — ~10x faster epoch I/O',
-            'Checkpoint-every-epoch to survive T4 disconnects',
-            'Flask web app with drag-and-drop inference — under 200ms per image on CPU',
+            'Intelligence Pipeline with automated transcription via OpenAI Whisper',
+            'Markdown note generation via RAG using Groq and Llama 3',
+            'Interactive multi-step pop quizzes with detailed performance feedback',
+            'Gaps Detector comparing student notes against lecture transcripts',
         ],
         metrics: [
-            { label: 'mIoU', value: '56.92%' },
-            { label: 'Pixel Accuracy', value: '85.35%' },
-            { label: 'Sky IoU', value: '97.5%' },
-            { label: 'Training Images', value: '2,857' },
+            { label: 'Stack', value: 'Full-Stack' },
+            { label: 'Frontend', value: 'React + Vite' },
+            { label: 'Backend', value: 'FastAPI' },
+            { label: 'Auth & DB', value: 'Supabase' },
         ],
-        stack: ['PyTorch', 'SegFormer-B2', 'HuggingFace', 'Flask', 'Google Colab', 'fp16'],
-        color: '#4f8fff',
-        links: {},
+        stack: ['React', 'FastAPI', 'Supabase', 'Groq API', 'OpenAI Whisper', 'Zustand', 'Tailwind CSS'],
+        color: '#ec4899',
+        links: {
+            github: 'https://github.com/ashish5507/LectureIQ'
+        },
     },
     {
         id: 2,
@@ -69,6 +71,27 @@ const projects = [
         links: {
             youtube: 'https://youtu.be/JJIbn9EPQAE?si=D1orC-gQpIOUgsCO',
         },
+    },
+    {
+        id: 4,
+        title: 'DesertSeg — Terrain Segmentation',
+        tagline: 'Semantic segmentation for off-road autonomy',
+        description: 'A semantic segmentation pipeline that classifies every pixel in desert off-road scenes into 10 terrain categories — Trees, Sky, Rocks, Landscape, Flowers, Logs, and more. Trained entirely on synthetic simulation data from Duality AI\'s Falcon platform, proving synthetic environments can train production-quality perception models for autonomous ground vehicles.',
+        highlights: [
+            'Custom 16-bit mask loader handling Duality Falcon\'s I;16 PNG format',
+            'Dataset pipeline optimised for Colab — ~10x faster epoch I/O',
+            'Checkpoint-every-epoch to survive T4 disconnects',
+            'Flask web app with drag-and-drop inference — under 200ms per image on CPU',
+        ],
+        metrics: [
+            { label: 'mIoU', value: '56.92%' },
+            { label: 'Pixel Accuracy', value: '85.35%' },
+            { label: 'Sky IoU', value: '97.5%' },
+            { label: 'Training Images', value: '2,857' },
+        ],
+        stack: ['PyTorch', 'SegFormer-B2', 'HuggingFace', 'Flask', 'Google Colab', 'fp16'],
+        color: '#4f8fff',
+        links: {},
     },
 ]
 

@@ -5,7 +5,7 @@ import './Home.css'
 
 const stats = [
     { number: '20+', label: 'Projects Built', icon: Rocket },
-    { number: '250+', label: 'DSA Problems Solved', icon: Code2 },
+    { number: '350+', label: 'DSA Problems Solved', icon: Code2 },
     { number: '8.60', label: 'CGPA at NSUT', icon: Brain },
 ]
 
@@ -135,7 +135,7 @@ export default function Home() {
                                     <Rocket size={28} />
                                 </div>
                                 <h3>Problem Solving</h3>
-                                <p>260+ problems across LeetCode & GFG. Competitive programming enthusiast with strong DSA skills.</p>
+                                <p>350+ problems across LeetCode & GFG. Competitive programming enthusiast with strong DSA skills.</p>
                             </div>
                         </AnimatedSection>
                     </div>
